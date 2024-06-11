@@ -28,11 +28,12 @@ jobs:
     - name: Npm Install
       run: npm install
     - name: Run tests
-      run: npm test
+      run: npm run test-npm-sequrity
 
   integration_tests:
 
     runs-on: ubuntu-latest
+    needs: npm_sequrity_tests
  
 
     steps:
