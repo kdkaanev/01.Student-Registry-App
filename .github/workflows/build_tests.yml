@@ -28,7 +28,7 @@ jobs:
     - name: Npm Install
       run: npm install
     - name: Run tests
-      run: npm test-npm-sequrity
+      run: npm run test-npm-sequrity
 
   integration_tests:
 
@@ -47,4 +47,4 @@ jobs:
     - name: Npm Install
       run: npm install
     - name: Run tests
-      run: npm test
+      run: npm run test
