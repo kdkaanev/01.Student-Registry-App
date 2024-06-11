@@ -6,11 +6,18 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  
+
+    
 
 jobs:
-  build:
+  
+ 
+
+  integration_tests:
 
     runs-on: ubuntu-latest
+   
  
 
     steps:
@@ -24,4 +31,4 @@ jobs:
     - name: Npm Install
       run: npm install
     - name: Run tests
-      run: npm test
+      run: npm run test
