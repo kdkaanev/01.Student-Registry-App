@@ -30,6 +30,7 @@ jobs:
   deploy_render:
 
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     needs: integration_tests
 
     steps:
